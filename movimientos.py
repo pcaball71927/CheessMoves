@@ -1,4 +1,35 @@
+tablero = [
+['t', 'k', 'a', 'q', 'r', 'a', 'k', 't'],
+['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+['T', 'K', 'A', 'R', 'Q', 'A', 'K', 'T']
+]
+
 def tablero_a_cadena(tablero):
+    
+    (str) -> str
+
+    convierte el tablero a una cadena
+
+    >>>tablero_a_cadena(tablero)
+    [
+    ['t', 'k', 'a', 'q', 'r', 'a', 'k', 't'],
+    ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+    ['T', 'K', 'A', 'R', 'Q', 'A', 'K', 'T']
+    ]
+    
+    :param tablero: Representacion visual del juego en una (matriz)
+    :return: cadena que representa las casillas del tablero
+    """
     cadena = ""
     for fila in tablero:
         cadena += str(fila) + "\n"
