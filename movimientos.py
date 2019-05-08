@@ -10,7 +10,7 @@ tablero = [
 ]
 
 def tablero_a_cadena(tablero):
-    
+    """
     (str) -> str
 
     convierte el tablero a una cadena
@@ -26,7 +26,7 @@ def tablero_a_cadena(tablero):
     ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
     ['T', 'K', 'A', 'R', 'Q', 'A', 'K', 'T']
     ]
-    
+
     :param tablero: Representacion visual del juego en una (matriz)
     :return: cadena que representa las casillas del tablero
     """
