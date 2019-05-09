@@ -103,3 +103,7 @@ def mover_torre(tablero, x0,y0,x1,y1):
     # retorno el nuevo tablero    
     return tablero
     
+
+def mover_peon(tablero,xO,y0,x1,y1):
+    if tablero[x0][y0] != 'p' or tablero[x0][y0] =
+    return tablero
