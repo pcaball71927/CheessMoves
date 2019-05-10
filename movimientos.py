@@ -104,7 +104,23 @@ def mover_torre(tablero, x0,y0,x1,y1):
     return tablero
     
 
-def mover_peon(tablero,xO,y0,x1,y1):
-    if tablero[x0][y0] != 'p' or tablero[x0][y0] = 'P':
+def mover_peon(tablero,x0,y0,x1,y1):
+    if tablero[x0][y0] != 'p' or tablero[x0][y0] != 'P':
         raise Exception("La pieza debe ser un peon")
+
+    # movimiento  vertical o diagonal
+    movimiento_vertical = false;
+    if x0 != x1 and y0==y1:
+        movimiento_vertical = true;
+    elif x0 != x1 and x0>x1:
+        raise Exception("La pieza no puede retroceder.")
+    elif y1 == y0+1:
+        movimiento_vertical = false;
+    else:
+        raise Exception("La pieza no se movio o se mueve de forma no recta.")
+
+    # validar las recta
+    if  movimiento_vertical:
+
+
     return tablero
