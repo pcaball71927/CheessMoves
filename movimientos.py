@@ -112,13 +112,16 @@ def mover_peon(tablero,x0,y0,x1,y1):
     movimiento_vertical = false;
     if x0==x1 and y0==y1-1 or y0==y1+1:
         movimiento_vertical = true;
-        if tablero[x1][y1]=='':
-            tablero[x1][y1] = tablero[x0][y0]
-            tablero[x0][y0] = ' '
     elif x0==x1+1 or x0==x1-1 and y0==y1+1 or y0==y1-1:
         movimiento_vertical = false;
 
     else:
         raise Exception("La pieza no se movio o no se mueve en diagonal o vertical.")
+
+   # Movimiento vertical
+
+    if tablero[x1][y1] == '':
+        tablero[x1][y1] = tablero[x0][y0]
+        tablero[x0][y0] = ' '
 
     return tablero
