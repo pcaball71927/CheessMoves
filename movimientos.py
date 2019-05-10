@@ -119,6 +119,6 @@ def mover_peon(tablero,x0,y0,x1,y1):
         movimiento_vertical = false;
 
     else:
-        raise Exception("La pieza no se movio o se mueve en diagonal o vertical.")
+        raise Exception("La pieza no se movio o no se mueve en diagonal o vertical.")
 
     return tablero
